@@ -6,14 +6,11 @@ import Signup from "./components/Signup.jsx";
 import Connect from "./components/Connect.jsx";
 import Customize from "./components/Customize.jsx";
 import Pet from "./components/Pet.jsx";
+import Friends from "./components/Friends.jsx";
 
 const GlobalStyle = createGlobalStyle`
     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100%;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -26,12 +23,13 @@ function Root(){
     return(
         <>
             <Routes>
-                <Route path={`/*`} component={<Home />} />
-                <Route path={`/login`} component={<Login />} />
-                <Route path={`/signup`} component={<Signup />} />
-                <Route path={`/connect`} component={<Connect />} />
-                <Route path={`/customize`} component={<Customize />} />
-                <Route path={`/pet`} component={<Pet />} />
+                <Route path={`/*`} element={<Home />} />
+                <Route path={`/login`} element={<Login />} />
+                <Route path={`/signup`} element={<Signup />} />
+                <Route path={`/connect`} element={<Connect />} />
+                <Route path={`/pet`} element={<Pet />} />
+                <Route path={`/customize`} element={<Customize />} />
+                <Route path={`/friends`} element={<Friends />} />
             </Routes>
         </>
     )
