@@ -6,10 +6,12 @@ import polygon2 from "./assets/Polygon 2.svg";
 import polygon3 from "./assets/Polygon 3.svg";
 import polygon4 from "./assets/Polygon 4.svg";
 import "./stylesheets/signup.css";
+import useWindowDimensions from "./WindowDimensions.jsx";
 
 export default function Signup() {
+const dimensions = useWindowDimensions();
     return (
-        <div className="sign-in">
+        <div className="sign-in" style={{zoom: Math.min((dimensions.width / 1280), (dimensions.height / 832))}}>
             <div className="overlap-wrapper">
                 <div className="overlap">
                     <div className="overlap-group">

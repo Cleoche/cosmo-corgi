@@ -6,11 +6,13 @@ import polygon3 from "./assets/Polygon 3.svg";
 import polygon4 from "./assets/Polygon 4.svg";
 import "./stylesheets/home.css";
 import {useNavigate} from "react-router-dom";
+import useWindowDimensions from "./WindowDimensions.jsx";
 
 export default function Home () {
     const navigate = useNavigate();
+    const dimensions = useWindowDimensions();
     return (
-        <div className="homepage">
+        <div className="homepage" style={{zoom: Math.min((dimensions.width / 1280), (dimensions.height / 832))}}>
             <div className="overlap-group-wrapper">
                 <div className="overlap-group">
                     <p className="text-wrapper">a pet from outer space</p>
