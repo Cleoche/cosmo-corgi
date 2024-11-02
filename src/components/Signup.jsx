@@ -14,74 +14,71 @@ const dimensions = useWindowDimensions();
         <div className="sign-in" style={{zoom: Math.min((dimensions.width / 1280), (dimensions.height / 832))}}>
             <div className="overlap-wrapper">
                 <div className="overlap">
+
+                    <div className="overlap-2">
+                        <div className="ellipse-7"/>
+
+                        <div className="ellipse-8"/>
+
+                        <div className="ellipse-9"/>
+
+                        <div className="ellipse-7"/>
+
+                        <div className="ellipse-8"/>
+
+                        <div className="ellipse-9"/>
+
+                        <div className="text-wrapper-4">Sign in</div>
+                    </div>
+
                     <div className="overlap-group">
-                        <div className="ellipse" />
+                        <div className="ellipse"/>
 
-                        <div className="div" />
+                        <div className="div"/>
 
-                        <img className="polygon" alt="Polygon" src={polygon1} />
+                        <img className="polygon" alt="Polygon" src={polygon1}/>
 
-                        <img className="img" alt="Polygon" src={polygon2} />
+                        <img className="img" alt="Polygon" src={polygon2}/>
 
-                        <div className="ellipse-2" />
+                        <div className="ellipse-2"/>
 
-                        <img className="ellipse-3" alt="Ellipse" src={ellipse3} />
+                        <img className="ellipse-3" alt="Ellipse" src={ellipse3}/>
 
-                        <div className="ellipse-4" />
+                        <div className="ellipse-4"/>
 
-                        <div className="ellipse-5" />
+                        <div className="ellipse-5"/>
 
-                        <div className="ellipse-6" />
+                        <div className="ellipse-6"/>
 
-                        <div className="ellipse" />
+                        <div className="ellipse"/>
 
-                        <img className="polygon" alt="Polygon" src={polygon3} />
+                        <img className="polygon" alt="Polygon" src={polygon3}/>
 
-                        <img className="img" alt="Polygon" src={polygon4} />
+                        <img className="img" alt="Polygon" src={polygon4}/>
 
-                        <div className="ellipse-2" />
+                        <div className="ellipse-2"/>
 
-                        <img className="ellipse-3" alt="Ellipse" src={ellipse12} />
+                        <img className="ellipse-3" alt="Ellipse" src={ellipse12}/>
 
-                        <div className="ellipse-4" />
+                        <div className="ellipse-4"/>
 
-                        <div className="ellipse-5" />
+                        <div className="ellipse-5"/>
 
-                        <div className="ellipse-6" />
+                        <div className="ellipse-6"/>
 
-                        <div className="rectangle" />
+                        <div className="rectangle"/>
 
-                        <div className="rectangle-2" />
 
-                        <div className="rectangle-3" />
-
-                        <div className="rectangle-4" />
 
                         <button className="login">
                             <span className="button">Sign up</span>
                         </button>
 
-                        <div className="text-wrapper">email</div>
+                        <input className="text-wrapper" placeholder={`email`}></input>
 
-                        <div className="text-wrapper-2">username</div>
+                        <input className="text-wrapper-2" placeholder={`username`}></input>
 
-                        <div className="text-wrapper-3">password</div>
-                    </div>
-
-                    <div className="overlap-2">
-                        <div className="ellipse-7" />
-
-                        <div className="ellipse-8" />
-
-                        <div className="ellipse-9" />
-
-                        <div className="ellipse-7" />
-
-                        <div className="ellipse-8" />
-
-                        <div className="ellipse-9" />
-
-                        <div className="text-wrapper-4">Sign in</div>
+                        <input className="text-wrapper-3" placeholder={`password`}></input>
                     </div>
                 </div>
             </div>

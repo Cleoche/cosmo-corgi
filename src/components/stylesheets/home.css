@@ -216,3 +216,8 @@
     transform: rotate(27.24deg);
     width: 245px;
 }
+
+.homepage .login:hover, .homepage .button-wrapper:hover {
+    cursor: pointer;
+    background-color: #59495d;
+}
