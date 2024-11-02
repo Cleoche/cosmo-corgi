@@ -10,7 +10,6 @@ import Friends from "./components/Friends.jsx";
 
 const GlobalStyle = createGlobalStyle`
     *{
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
