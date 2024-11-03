@@ -1,16 +1,11 @@
-import React from "react";
-import ellipse3 from "./assets/Ellipse 3.svg";
-import ellipse12 from "./assets/Ellipse 12.svg";
-import polygon1 from "./assets/Polygon 1.svg";
-import polygon2 from "./assets/Polygon 2.svg";
-import polygon3 from "./assets/Polygon 3.svg";
-import polygon4 from "./assets/Polygon 4.svg";
 import "./stylesheets/login.css";
 import useWindowDimensions from "./WindowDimensions.jsx";
 import Background from "./Background.jsx";
+import {useNavigate} from "react-router-dom";
 
 export default function Login () {
     const dimensions = useWindowDimensions();
+    const navigate = useNavigate();
     return (
         <div className="login" style={{zoom: Math.min((dimensions.width / 1280), (dimensions.height / 832))}}>
             <div className="overlap-wrapper">
@@ -24,7 +19,7 @@ export default function Login () {
 
                         <div className="rectangle"/>
 
-                        <button className="button-wrapper">
+                        <button className="button-wrapper" onClick={() => navigate("/pet")}>
                             <span className="button">Login</span>
                         </button>
 

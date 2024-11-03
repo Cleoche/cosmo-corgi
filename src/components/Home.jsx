@@ -1,9 +1,3 @@
-import ellipse3 from "./assets/Ellipse 3.svg";
-import ellipse12 from "./assets/Ellipse 12.svg";
-import polygon1 from "./assets/Polygon 1.svg";
-import polygon2 from "./assets/Polygon 2.svg";
-import polygon3 from "./assets/Polygon 3.svg";
-import polygon4 from "./assets/Polygon 4.svg";
 import "./stylesheets/home.css";
 import {useNavigate} from "react-router-dom";
 import useWindowDimensions from "./WindowDimensions.jsx";
