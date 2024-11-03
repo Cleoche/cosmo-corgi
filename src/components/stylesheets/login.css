@@ -4,13 +4,14 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .login .overlap-wrapper {
     background-color: #2a1f2d;
-    height: 832px;
-    overflow: hidden;
     width: 1280px;
+    height: 100%;
+    align-content: center;
 }
 
 .login .overlap {
@@ -27,93 +28,6 @@
     position: absolute;
     top: 153px;
     width: 1010px;
-}
-
-.login .ellipse {
-    background-color: #c9c19f;
-    border-radius: 213.5px / 200.5px;
-    height: 401px;
-    left: 556px;
-    position: absolute;
-    top: 318px;
-    width: 427px;
-}
-
-.login .div {
-    background-color: #d9d9d9;
-    border-radius: 306.5px / 273.5px;
-    height: 547px;
-    left: 397px;
-    position: absolute;
-    top: 178px;
-    width: 613px;
-}
-
-.login .polygon {
-    height: 170px;
-    left: 678px;
-    position: absolute;
-    top: 208px;
-    width: 177px;
-}
-
-.login .img {
-    height: 176px;
-    left: 449px;
-    position: absolute;
-    top: 435px;
-    width: 171px;
-}
-
-.login .ellipse-2 {
-    background-color: #fcf7f7;
-    border-radius: 139.5px / 133.5px;
-    height: 267px;
-    left: 704px;
-    position: absolute;
-    top: 452px;
-    width: 279px;
-}
-
-.login .ellipse-3 {
-    height: 139px;
-    left: 680px;
-    position: absolute;
-    top: 430px;
-    width: 157px;
-}
-
-.login .ellipse-4 {
-    background-color: #4a394e;
-    border-radius: 22.5px / 12.5px;
-    height: 25px;
-    left: 747px;
-    position: absolute;
-    top: 506px;
-    transform: rotate(-36.36deg);
-    width: 45px;
-}
-
-.login .ellipse-5 {
-    background-color: #4a394e;
-    border-radius: 17.38px / 13.28px;
-    height: 27px;
-    left: 636px;
-    position: absolute;
-    top: 527px;
-    transform: rotate(-36.36deg);
-    width: 35px;
-}
-
-.login .ellipse-6 {
-    background-color: #4a394e;
-    border-radius: 17.38px / 13.28px;
-    height: 27px;
-    left: 797px;
-    position: absolute;
-    top: 397px;
-    transform: rotate(-36.36deg);
-    width: 35px;
 }
 
 .login .rectangle {
@@ -164,6 +78,7 @@
     top: 303px;
     transform: rotate(0.27deg);
     width: 250px;
+    z-index: 10;
 }
 
 .login .button {
@@ -177,6 +92,7 @@
     line-height: normal;
     position: relative;
     width: fit-content;
+    z-index: 10;
 }
 
 .login .text-wrapper {
