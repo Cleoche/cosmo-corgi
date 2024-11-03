@@ -8,6 +8,8 @@ import Customize from "./components/Customize.jsx";
 import Pet from "./components/Pet.jsx";
 import Friends from "./components/Friends.jsx";
 import React, {useState, useEffect} from 'react';
+import Tasks from "./components/Tasks.jsx";
+import Checkin from "./components/Checkin.jsx";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -38,6 +40,8 @@ function Root(){
                 <Route path={`/pet`} element={<Pet />} />
                 <Route path={`/customize`} element={<Customize />} />
                 <Route path={`/friends`} element={<Friends />} />
+                <Route path={`/tasks`} element={<Tasks />} />
+                <Route path={`/checkin`} element={<Checkin/>} />
             </Routes>
     )
 }

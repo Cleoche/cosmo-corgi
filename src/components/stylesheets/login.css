@@ -184,3 +184,17 @@
     cursor: pointer;
     background-color: #59495d;
 }
+
+.login .p {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    left: 572px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 252px;
+    width: 499px;
+}
