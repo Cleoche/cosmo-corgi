@@ -15,18 +15,14 @@ const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         margin: 0;
         padding: 0;
+        height: 100vh;
+        width: 100vw;
         body {
             background-color: #2a1f2d;
             justify-content: center;
-            overflow-scrolling: touch;
+            
         }
     }
-`
-const StyledWrapper = styled.div`
-    background-color: #2a1f2d;
-    align-content: center;
-    max-width: 100vw;
-    overflow: scroll;
 `
 const router = createBrowserRouter(
     [{path:"*", Component: Root},]
@@ -34,7 +30,6 @@ const router = createBrowserRouter(
 
 function Root(){
     return(
-        <StyledWrapper>
             <Routes>
                 <Route path={`/*`} element={<Home />} />
                 <Route path={`/login`} element={<Login />} />
@@ -44,7 +39,6 @@ function Root(){
                 <Route path={`/customize`} element={<Customize />} />
                 <Route path={`/friends`} element={<Friends />} />
             </Routes>
-        </StyledWrapper>
     )
 }
 

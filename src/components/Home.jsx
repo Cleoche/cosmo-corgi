@@ -7,6 +7,7 @@ import polygon4 from "./assets/Polygon 4.svg";
 import "./stylesheets/home.css";
 import {useNavigate} from "react-router-dom";
 import useWindowDimensions from "./WindowDimensions.jsx";
+import Background from "./Background.jsx";
 
 export default function Home () {
     const navigate = useNavigate();
@@ -15,11 +16,10 @@ export default function Home () {
         <div className="homepage" style={{zoom: Math.min((dimensions.width / 1280), (dimensions.height / 832))}}>
             <div className="overlap-group-wrapper">
                 <div className="overlap-group">
+                    <Background/>
                     <p className="text-wrapper">a pet from outer space</p>
 
                     <div className="div">Cosmic Corgi</div>
-
-                    <div className="ellipse" />
 
                     <button className="login" onClick={() => navigate('/login')}>
                         <span className="button">Login</span>
@@ -29,53 +29,11 @@ export default function Home () {
                         <span className="button">Sign up</span>
                     </button>
 
-                    <div className="ellipse-2" />
-
-                    <img className="polygon" alt="Polygon" src={polygon1} />
-
-                    <img className="img" alt="Polygon" src={polygon2} />
-
-                    <div className="ellipse-3" />
-
-                    <img className="ellipse-4" alt="Ellipse" src={ellipse3} />
-
-                    <div className="ellipse-5" />
-
-                    <div className="ellipse-6" />
-
-                    <div className="ellipse-7" />
-
-                    <div className="ellipse-8" />
-
-                    <div className="ellipse-9" />
-
-                    <div className="ellipse-10" />
-
                     <p className="text-wrapper">a pet from outer space</p>
 
                     <div className="div">Cosmic Corgi</div>
 
-                    <div className="ellipse-2" />
 
-                    <img className="polygon" alt="Polygon" src={polygon3} />
-
-                    <img className="img" alt="Polygon" src={polygon4} />
-
-                    <div className="ellipse-3" />
-
-                    <img className="ellipse-4" alt="Ellipse" src={ellipse12} />
-
-                    <div className="ellipse-5" />
-
-                    <div className="ellipse-6" />
-
-                    <div className="ellipse-7" />
-
-                    <div className="ellipse-8" />
-
-                    <div className="ellipse-9" />
-
-                    <div className="ellipse-10" />
                 </div>
             </div>
         </div>
